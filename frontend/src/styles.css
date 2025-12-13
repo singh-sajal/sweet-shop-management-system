@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf6e3;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+nav {
+  background: #ff6f61;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav button {
+  background: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  background: #ffe5e0;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+.card input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.card button {
+  margin-top: 15px;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover:not(:disabled) {
+  background: #ff3b2e;
+}
+
+.card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Grid for sweets */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Sweet Card inside grid */
+.grid .card {
+  max-width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.grid .card h3 {
+  color: #ff6f61;
+  margin-bottom: 8px;
+}
+
+.grid .card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
